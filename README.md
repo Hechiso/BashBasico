@@ -1,0 +1,2 @@
+# BashBasico
+scripts basicos 
