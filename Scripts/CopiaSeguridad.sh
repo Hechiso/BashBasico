@@ -13,29 +13,26 @@
 
 
 
-# Configura el puerto serie (ajusta el nombre del puerto según corresponda)
-PUERTO_SERIE="/dev/ttyACM1"
+# Solicitar la ruta del archivo o directorio a respaldar
+echo "Por favor, ingrese la ruta del archivo o directorio a respaldar:"
+read source_path
 
-# Configura la velocidad de comunicación
-VELOCIDAD_SERIE="9600"
+# Verificar si la ruta existe
+if [ ! -e "$source_path" ]; then
+    echo "La ruta especificada no existe."
+    exit 1
+fi
 
-# Inicia la lectura del puerto serie
-stty -F $PUERTO_SERIE $VELOCIDAD_SERIE cs8 -cstopb -parenb
-exec 3<$PUERTO_SERIE
+# Solicitar la ruta donde se guardará la copia de seguridad
+echo "Por favor, ingrese la ruta donde desea guardar la copia de seguridad:"
+read backup_path
 
-# Bucle para leer el puerto serie y simular pulsaciones de teclado
-while true; do
-  read -rsn1 -t 0.1 -u 3 CHAR
-  case "$CHAR" in
-    "a") xdotool type "a" ;;
-    "q") xdotool type "q" ;;
-    "e") xdotool type "e" ;;
-    "s") xdotool type "s" ;;
-    "z") xdotool type "z" ;;
-    "c") xdotool type "c" ;;
-  esac
-done
+# Crear una copia de seguridad comprimida
+tar -czvf "$backup_path/backup_$(date +%Y%m%d%H%M%S).tar.gz" "$source_path"
 
-# Cierra el puerto serie al salir del script
-exec 3<&-
+if [ $? -eq 0 ]; then
+    echo "Copia de seguridad exitosa en $backup_path."
+else
+    echo "Error al realizar la copia de seguridad."
+fi
 
