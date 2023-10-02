@@ -18,7 +18,7 @@ El repositorio incluye los siguientes scripts:
 3.- controladorArduino.sh
 //sirve para ayudar a un arduino uno a enviar pulsaciones del teclado a una pc con ubuntu
 
-4.- CopiaSEguridad.sh
+4.- CopiaSeguridad.sh
 //Ayuda a crear un copia de seguridad atraves de la comprecion de una carpeta dentro de una direccion o ruta de tu eleccion
 
 5.- InformePuertos.sh
@@ -27,7 +27,11 @@ El repositorio incluye los siguientes scripts:
 6.- enviarCorreo.sh
 // utiliza las utilidades de Sendmail para poder enviar un correo electronico 
 
+7.- maximacpuHora.sh
+// crea un archivo para guardar la informacion sobre el uso de la cpu en ese momento
 
+8.- AnalisisProgramado.sh
+// utiliza para comprobar el tamaño de un archivo y que realize un analisis de la informacion de este archivo
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 
