@@ -32,7 +32,11 @@ El repositorio incluye los siguientes scripts:
 
 8.- AnalisisProgramado.sh
 // utiliza para comprobar el tamaño de un archivo y que realize un analisis de la informacion de este archivo
-------------------------------------------------------------------------------------------------------------------------------------------------
+
+9.- CSV.sh
+// se utiliza para crear y agregar informacion a un archivo .csv
+
+:------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Siéntete libre de explorar los scripts y utilizarlos según tus necesidades. Cada script tiene su propia documentación interna para ayudarte a comprender cómo usarlo.
