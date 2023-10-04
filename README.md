@@ -36,6 +36,8 @@ El repositorio incluye los siguientes scripts:
 9.- CSV.sh
 // se utiliza para crear y agregar informacion a un archivo .csv
 
+10.- baseDatos.sh
+// se utiliza para crear una base de datos y una tabla basica 
 :------------------------------------------------------------------------------------------------------------------------------------------------
 
 

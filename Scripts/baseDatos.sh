@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Copyright [2023] [Nigromante-Hechiso]
 
 # Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo los términos de la Licencia Pública General de GNU publicada por 
@@ -12,27 +11,21 @@
 # Debería haber recibido una copia de la Licencia Pública General de GNU junto con este programa. Si no la ha recibido, 
 # consulte <https://www.gnu.org/licenses/gpl.html>.
 
-# Nombre del archivo CSV
-archivo="usuarios.csv"
+# Pedir al usuario el nombre de la base de datos
+echo "Escribe el nombre de la base de datos"
+read db_nombre
 
-# Comprobamos si el archivo ya existe o no
-if [ ! -e "$archivo" ]; then
-  # Si no existe, creamos el archivo con encabezados
-  echo "Nombre,Edad,Correo" > "$archivo"
-fi
+# Crear la base de datos
+sqlite3 "$db_nombre" <<EOF
+-- Crear una tabla llamada "jugadores" con dos columnas
+CREATE TABLE jugadores (
+    nombre_del_jugador TEXT,
+    nivel INTEGER
+);
 
-# Solicitar información del usuario
-echo "Ingrese el nombre del usuario:"
-read nombre
+-- Salir de SQLite
+.quit
+EOF
 
-echo "Ingrese la edad del usuario:"
-read edad
-
-echo "Ingrese el correo electrónico del usuario:"
-read correo
-
-# Agregar la información al archivo CSV
-echo "$nombre,$edad,$correo" >> "$archivo"
-
-echo "Información guardada en $archivo"
+echo "Base de datos '$db_nombre' creada exitosamente."
 
