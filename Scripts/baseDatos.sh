@@ -17,7 +17,7 @@ read db_nombre
 
 # Crear la base de datos
 sqlite3 "$db_nombre" <<EOF
--- Crear una tabla llamada "jugadores" con dos columnas
+-- Crear una tabla llamada "Nombre de la tabla" con dos columnas
 CREATE TABLE jugadores (
     nombre_del_jugador TEXT,
     nivel INTEGER

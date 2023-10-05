@@ -37,7 +37,12 @@ El repositorio incluye los siguientes scripts:
 // se utiliza para crear y agregar informacion a un archivo .csv
 
 10.- baseDatos.sh
-// se utiliza para crear una base de datos y una tabla basica 
+// se utiliza para crear una base de datos y una tabla basica
+
+
+11.- tamaArchivo.txt
+// se utiliza para averiguar el tamaño de un archivo
+ 
 :------------------------------------------------------------------------------------------------------------------------------------------------
 
 
