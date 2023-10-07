@@ -40,8 +40,11 @@ El repositorio incluye los siguientes scripts:
 // se utiliza para crear una base de datos y una tabla basica
 
 
-11.- tamaArchivo.txt
+11.- tamaArchivo.sh
 // se utiliza para averiguar el tamaño de un archivo
+
+12.- scrapingDolar.sh
+// obtiene el precio del dolar de la pagina https://www.eldolar.info/es-MX/mexico/dia/hoy mediante una peticion curl
  
 :------------------------------------------------------------------------------------------------------------------------------------------------
 
