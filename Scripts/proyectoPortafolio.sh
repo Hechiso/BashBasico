@@ -12,24 +12,29 @@
 # consulte <https://www.gnu.org/licenses/gpl.html>.
 
 
-archivo="Ejemplo.txt"  
-tamano=$(stat -c %s "$archivo")
 
-echo "=============== Tamaño del archivo =============="
-echo "El archivo $archivo tiene un tamaño de: $tamano bytes"
+# Variables para los archivos y carpetas del proyecto
 
-# Se crea una variable para ajustar la informacion obtenida del archivo y presentarla al usuario
-    tamano_legible=$(echo "scale=1; $tamano / 1000" | bc)
-    echo "${tamano_legible} Kilobytes"
+carpetaPrincipal="Portafolio"
+archivoReadme="README.md"
+archivoIndex="index.html"
+carpetaCss="css"
+archivoEstilos="estilos.css"
+carpetaJs="js"
 
-# Se compueba si el tamaño llego al limite programado
-if [[ "$tamano" < 100000 ]]; then
-	echo "el archivo $archivo llego a 1 gb de informacion."
-	echo "$tamano"
-else
-    echo "El archivo $archivo no ha llegado al limite."
-fi
+# construccion del proyecto
 
-# este es el fin del script
+mkdir "$carpetaPrincipal"
+
+cd "$carpetaPrincipal"
+
+touch "$archivoReadme" "$archivoIndex"
+
+mkdir "$carpetaCss" "$carpetaJs"
+
+cd "$carpetaCss"
+
+touch "$archivoEstilos"
+
 
 

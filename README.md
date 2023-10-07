@@ -46,6 +46,8 @@ El repositorio incluye los siguientes scripts:
 12.- scrapingDolar.sh
 // obtiene el precio del dolar de la pagina https://www.eldolar.info/es-MX/mexico/dia/hoy mediante una peticion curl
  
+13.- proyectoPortafolio.sh
+// construye la estructura de carpetas y archivos de un proyecto de un portafolio simple
 :------------------------------------------------------------------------------------------------------------------------------------------------
 
 
