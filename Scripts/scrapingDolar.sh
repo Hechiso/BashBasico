@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Copyright [2023] [Nigromante-Hechiso]
 
 # Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo los términos de la Licencia Pública General de GNU publicada por 
@@ -13,23 +12,24 @@
 # consulte <https://www.gnu.org/licenses/gpl.html>.
 
 
+
 #Se inicia el bucle
 while true; do
 
 #----------------------------------------------------------------------------------------------------------------------------------------------
 
 # Obtener la fecha y hora actual
-fecha_hora=$(date +"%Y-%m-%d %H:%M:%S")
+fecha=$(date +"%Y-%m-%d")
+hora=$(date +"%H:%M:%S")
 
 # Archivo de destino
 archivo_txt="infoDivisas.txt"
 
+
 # Agregar la fecha y hora al archivo
-echo "Fecha y hora: $fecha_hora" >> "$archivo_txt"
-
-# Agregar más contenido al archivo si es necesario
 echo "=====================" >> "$archivo_txt"
-
+echo "Fecha $fecha" >> "$archivo_txt"
+echo "Hora $hora" >> "$archivo_txt"
 
 # Se obtienen los datos del precio del dólar
 curl -s https://www.eldolar.info/es-MX/mexico/dia/hoy | grep -o '<span class="xTimes">[^<]*</span>' | sed 's/<[^>]*>//g' > infodolar.txt
@@ -55,10 +55,10 @@ do
 
     # Agregar el texto correspondiente a cada línea
     case "$numero_linea" in
-        1) echo "$linea dolar" ;;
-        2) echo "$linea Precio Actual" ;;
-        3) echo "$linea Precio Compra" ;;
-        4) echo "$linea Precio Venta" ;;
+        1) echo "dolar $linea" ;;
+        2) echo "Actual $linea" ;;
+        3) echo "Compra $linea" ;;
+        4) echo "Venta $linea" ;;
     esac
 done < "$archivo_entrada" > "$archivo_salida"
 
@@ -76,5 +76,9 @@ sleep 10
 
 
 ./metadatosDivisas.sh
+./buscarPalabra.sh
+
+rm infodolar.txt
+rm infodolar_modificado.txt
 
 done
