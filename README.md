@@ -48,6 +48,7 @@ El repositorio incluye los siguientes scripts:
  
 13.- proyectoPortafolio.sh
 // construye la estructura de carpetas y archivos de un proyecto de un portafolio simple
+
 :------------------------------------------------------------------------------------------------------------------------------------------------
 
 
