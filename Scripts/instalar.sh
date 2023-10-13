@@ -16,6 +16,7 @@
 
 
 # se declaran las variables
+Registro="nombredelarchivoderegistro.txt"
 carpetaMain="RegistroApt"
 path="ruta del archivo" 
 
