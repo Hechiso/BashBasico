@@ -52,7 +52,19 @@ El repositorio incluye los siguientes scripts:
 14.- Daemon.sh
 //la estructura basica de un demonio
 
-:------------------------------------------------------------------------------------------------------------------------------------------------
+15.- buscarSudo.sh
+//hace una busqueda de los fallos de autentificacion de el comando sudo
+
+16.- convertirDivisas.sh
+//Toma el archivo de scrapingDolar.sh y lo convierte en un archivo con formato CSV
+
+17.- puertos.sh
+//scanea todos los puertos 
+
+18.- Auto.sh
+//scanea los puertos definidos por el usuario y pernsanaliza el tiempo de busqueda
+
+.------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Siéntete libre de explorar los scripts y utilizarlos según tus necesidades. Cada script tiene su propia documentación interna para ayudarte a comprender cómo usarlo.
