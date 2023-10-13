@@ -49,6 +49,9 @@ El repositorio incluye los siguientes scripts:
 13.- proyectoPortafolio.sh
 // construye la estructura de carpetas y archivos de un proyecto de un portafolio simple
 
+14.- Daemon.sh
+//la estructura basica de un demonio
+
 :------------------------------------------------------------------------------------------------------------------------------------------------
 
 
