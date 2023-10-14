@@ -64,6 +64,9 @@ El repositorio incluye los siguientes scripts:
 18.- Auto.sh
 //scanea los puertos definidos por el usuario y pernsanaliza el tiempo de busqueda
 
+19.- fractal.sh
+//utiliza caracteres ASCII para dibujar un fractal 
+
 .------------------------------------------------------------------------------------------------------------------------------------------------
 
 
