@@ -67,6 +67,8 @@ El repositorio incluye los siguientes scripts:
 19.- fractal.sh
 //utiliza caracteres ASCII para dibujar un fractal 
 
+20.- compilacion.sh
+//compila codigo c++
 .------------------------------------------------------------------------------------------------------------------------------------------------
 
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Nombre del archivo
-file_name="instalar.sh"
+file_name="archivo.txt"
 
 # Verifica si el archivo existe
 if [ ! -f "$file_name" ]; then
