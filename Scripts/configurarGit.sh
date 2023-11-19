@@ -19,14 +19,14 @@ else
 fi
 
 # Generar la clave SSH
-ssh-keygen -t ed25519 -C "NigromanteOficial@outlook.com"
+ssh-keygen -t ed25519 -C "tucorreo@outlook.com"
 
 # Agregar la clave al agente SSH
 ssh-add ~/.ssh/id_ed25519
 
 # Configurar correo y nombre de usuario global de Git
-git config --global user.email "NigromanteOficial@outlook.com"
-git config --global user.name "Hechiso"
+git config --global user.email "tucorreo@outlook.com"
+git config --global user.name "nombre de tu asuario"
 
 # Mostrar la clave SSH para copiarla
 cat ~/.ssh/id_ed25519.pub
@@ -39,5 +39,5 @@ echo "Escribe el nombre del repositorio que quieres clonar: "
 read variableRepositorio
 
 # Clonar el repositorio utilizando la clave SSH configurada
-git clone git@github.com:Hechiso/"$variableRepositorio"
+git clone git@github.com:tu usuario/"$variableRepositorio"
 
