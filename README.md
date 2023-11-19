@@ -69,6 +69,20 @@ El repositorio incluye los siguientes scripts:
 
 20.- compilacion.sh
 //compila codigo c++
+
+21.- contarLineas.sh
+// se cuentas las lineas de un archivo
+
+21.- ConfigurarGit.sh
+// configuara git con github para clonar un repositorio
+
+22.- GuardarRepositorios.sh
+// comprime una lista de repositorios dentro de un archivo .txt
+
+23.- DescargarRepositorios.sh
+// clona una lista de repositorios dentro de un archivo .txt
+
+
 .------------------------------------------------------------------------------------------------------------------------------------------------
 
 
