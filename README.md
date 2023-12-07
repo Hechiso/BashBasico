@@ -39,7 +39,6 @@ El repositorio incluye los siguientes scripts:
 10.- baseDatos.sh
 // se utiliza para crear una base de datos y una tabla basica
 
-
 11.- tamaArchivo.sh
 // se utiliza para averiguar el tamaño de un archivo
 
@@ -73,15 +72,17 @@ El repositorio incluye los siguientes scripts:
 21.- contarLineas.sh
 // se cuentas las lineas de un archivo
 
-21.- ConfigurarGit.sh
+22.- ConfigurarGit.sh
 // configuara git con github para clonar un repositorio
 
-22.- GuardarRepositorios.sh
+23.- GuardarRepositorios.sh
 // comprime una lista de repositorios dentro de un archivo .txt
 
-23.- DescargarRepositorios.sh
+24.- DescargarRepositorios.sh
 // clona una lista de repositorios dentro de un archivo .txt
 
+25.- actualizarApach2.sh
+// actualiza de manera programada el servidor de apache2 
 
 .------------------------------------------------------------------------------------------------------------------------------------------------
 
