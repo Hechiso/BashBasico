@@ -84,6 +84,8 @@ El repositorio incluye los siguientes scripts:
 25.- actualizarApach2.sh
 // actualiza de manera programada el servidor de apache2 
 
+26.- actualizarSistema.sh
+// actualiza el sistema basados en debian
 .------------------------------------------------------------------------------------------------------------------------------------------------
 
 
