@@ -86,6 +86,13 @@ El repositorio incluye los siguientes scripts:
 
 26.- actualizarSistema.sh
 // actualiza el sistema basados en debian
+
+27.- capturarTrafico.sh
+// captura el trafico dentro de tu red
+
+28.- filtrosAnalisis.sh
+// hace una separacion del trafico capturado por el scritp capturarTrafico.sh por puertos y protocolos
+
 .------------------------------------------------------------------------------------------------------------------------------------------------
 
 
