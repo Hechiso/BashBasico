@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=qterminal -e /bin/bash /home/nigromante/Bienvenida.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Bienvenida
+Comment=Abre qterminal con un mensaje de bienvenida
+

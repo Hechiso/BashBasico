@@ -93,6 +93,15 @@ El repositorio incluye los siguientes scripts:
 28.- filtrosAnalisis.sh
 // hace una separacion del trafico capturado por el scritp capturarTrafico.sh por puertos y protocolos
 
+29.- Bienvenida.sh
+// Da un saludo al usuario y enciende el wifi
+
+30.- SitioWeb.sh 
+// Da una lista de opciones para conectarse a internet
+
+31.- Se agrega archivo de configuracion .desktop para hacer que los dos scripts anteriores se ejecuten al iniciar sesion este archivo va dentro 
+de la carpeta .config/autostart/
+
 .------------------------------------------------------------------------------------------------------------------------------------------------
 
 
