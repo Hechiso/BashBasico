@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Verificar si se pasó una carpeta como argumento
+if [ -z "$1" ]; then
+    echo "Uso: $0 /ruta/a/carpeta"
+    exit 1
+fi
+
+RUTA="$1"
+
+# Verificar si la ruta es una carpeta válida
+if [ ! -d "$RUTA" ]; then
+    echo "Error: '$RUTA' no es una carpeta válida"
+    exit 1
+fi
+
+# Salida PDF
+SALIDA="$RUTA/salida.pdf"
+
+# Buscar imágenes (filtra por extensiones comunes)
+IMAGENES=$(find "$RUTA" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) | sort)
+
+# Verificar si encontró imágenes
+if [ -z "$IMAGENES" ]; then
+    echo "No se encontraron imágenes en '$RUTA'"
+    exit 1
+fi
+
+# Crear PDF con convert
+convert $IMAGENES "$SALIDA"
+
+# Verificar éxito
+if [ $? -eq 0 ]; then
+    echo "PDF creado exitosamente: $SALIDA"
+else
+    echo "Error al crear el PDF"
+fi
+

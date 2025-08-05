@@ -1,4 +1,3 @@
-# Proyecto de Scripts en Bash
 
 Bienvenido al repositorio de scripts en Bash bajo la Licencia Pública General de GNU (GNU GPL). Este repositorio contiene una colección de scripts en Bash que pueden ser útiles en diversas tareas de automatización y administración de sistemas.
 
@@ -101,6 +100,27 @@ El repositorio incluye los siguientes scripts:
 
 31.- Se agrega archivo de configuracion .desktop para hacer que los dos scripts anteriores se ejecuten al iniciar sesion este archivo va dentro 
 de la carpeta .config/autostart/
+
+32.- permisos.sh 
+     se usa el comado chown y chmod para cambiar el usuario y permisos de un servidor pero se puede usar para cualquier propisito
+
+33.- Imagen_pdf
+     se usa para tomar varias imagenes dentro de una carpeta y crear una archivo pdf
+
+34.- pasarela 
+     se usa en conjuntocon i3 y feh para dar un aspecto personalizado a el fondo de pantalla ,solo hay que definir el tiempo con la herramienta la herramienta cron
+
+35.- gestor_archivos.sh
+     se usa para buscar archivos por extencion 
+
+36.- iptables_local
+     se usa para bloquear todo el trafico exepto el trafico de la red local
+
+
+
+
+
+
 
 .------------------------------------------------------------------------------------------------------------------------------------------------
 
