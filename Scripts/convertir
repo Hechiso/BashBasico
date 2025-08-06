@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Verificar que se proporcione una carpeta como argumento
+if [ -z "$1" ]; then
+    echo "❌ Uso: $0 <carpeta>"
+    exit 1
+fi
+
+CARPETA="$1"
+contador=0
+
+# Verificar que la carpeta exista
+if [ ! -d "$CARPETA" ]; then
+    echo "❌ La carpeta '$CARPETA' no existe."
+    exit 1
+fi
+
+# Recorre todos los archivos (ignora subdirectorios)
+for archivo in "$CARPETA"/*; do
+    if [ -f "$archivo" ]; then
+        echo "🔧 Procesando archivo: $archivo"
+
+        #### Aquí va tu tarea personalizada ####
+
+        # Ejemplo: mostrar el tipo de archivo
+
+	base64 "$archivo" > $CARPETA/archivo$contador.txt
+
+
+#############################################################################################################
+
+        ./imagen.sh $CARPETA/archivo$contador.txt $CARPETA/imagen$contador.png 
+
+
+###############################################################################################################
+
+	rm $CARPETA/archivo$contador.txt
+	let contador=contador+1
+
+        # Ejemplo 2: convertir a base64 y mostrar primeros bytes
+        # base64 "$archivo" | head -n 1
+
+        # Ejemplo 3: extraer el primer fotograma si es video
+        # ffmpeg -i "$archivo" -vframes 1 "${archivo%.*}.png"
+
+        ########################################
+
+    fi
+done
+
+echo "✅ Tarea completada para todos los archivos."
+

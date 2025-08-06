@@ -116,7 +116,11 @@ de la carpeta .config/autostart/
 36.- iptables_local
      se usa para bloquear todo el trafico exepto el trafico de la red local
 
+37.- convertir
+     se automatiza la conversion de videos en imagenes 
 
+38.- desconvertir
+     se automatiza la desconversion de imagenes generadas por el script (convertir) a videos
 
 
 
