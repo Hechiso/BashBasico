@@ -1,0 +1,36 @@
+#!/bin/bash
+# Script para instalar Apache2 + PHP en Debian/Ubuntu
+# Guardar como instalar_apache_php.sh y ejecutar con: sudo bash instalar_apache_php.sh
+
+echo "Actualizando repositorios..."
+apt update && apt upgrade -y
+
+echo "Instalando Apache2..."
+apt install apache2 -y
+
+echo "Instalando PHP y módulos comunes..."
+apt install php libapache2-mod-php php-cli php-common php-mysql php-xml php-curl php-gd php-mbstring -y
+
+echo "Habilitando módulos de Apache..."
+a2enmod php*
+a2enmod rewrite
+
+echo "Reiniciando Apache..."
+systemctl restart apache2
+
+echo "Estado de Apache:"
+systemctl status apache2 --no-pager
+
+echo "Instalación completada."
+
+echo "Esta es la version de php segun esto descarga el modulo de sqlite3"
+
+php -v
+
+echo "Ejecuta los siguientes comandos para instalar sqlite3 si asi lo deseas."
+
+echo "sudo apt install php8.1-sqlite3 --- dependiendo de la version de php"
+echo "sudo systemctl restart apache2 --no-pager"
+
+echo "Instalacion completada."
+echo "Puedes probar en tu navegador con: http://localhost"

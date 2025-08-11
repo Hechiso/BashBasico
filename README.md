@@ -122,7 +122,10 @@ de la carpeta .config/autostart/
 38.- desconvertir
      se automatiza la desconversion de imagenes generadas por el script (convertir) a videos
 
-
+39.- descargar_apache
+     se instala apache ,php y sqlite3   
+  
+   
 
 
 
