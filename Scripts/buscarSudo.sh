@@ -11,5 +11,6 @@ if [ ! -f "$archivo" ]; then
 fi
 
 # Buscar y mostrar las líneas que contienen la palabra
-grep "$palabra_a_buscar" "$archivo"
+cat "$archivo" | tr -cd '\11\12\15\40-\176' | grep "$palabra_a_buscar"
+
 

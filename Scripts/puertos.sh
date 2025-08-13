@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Dirección IP del servidor a escanear
-SERVER="192.168.1.1"
+SERVER="192.168.1.11
+"
 
 # Escaneo de todos los puertos (1-65535)
 for port in {1..65535}; do

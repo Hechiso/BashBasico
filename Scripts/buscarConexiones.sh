@@ -14,7 +14,7 @@
 
 
 # Ruta de la base de datos places.sqlite en tu instalación de Firefox
-places_db="/snap/firefox/common/.mozilla/firefox/dr3tbk97.default/places.sqlite"
+places_db="snap/firefox/common/.mozilla/firefox/9rutszx4.default/places.sqlite"
 
 # Verificar si la base de datos places.sqlite existe
 if [ ! -f "$places_db" ]; then
